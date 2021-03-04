@@ -12,7 +12,10 @@ public class SubscriberService {
     private SubscriberRepository subscriberRepository;
 
     public Subscriber saveSubscriber(Subscriber subscriber) {
-
         return subscriberRepository.save(subscriber);
+    }
+
+    public Subscriber getSubscriberById(Long id) {
+        return subscriberRepository.findById(id).orElse(null);
     }
 }
