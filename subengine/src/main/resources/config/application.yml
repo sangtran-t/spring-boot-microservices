@@ -1,0 +1,13 @@
+app:
+  message: Subscriber data has been sent Successfully..
+spring:
+  rabbitmq:
+    host: localhost
+    password: guest
+    port: 5672
+    username: guest
+    exchange: subscriber.exchange
+    queue: subscriber.queue
+    routingkey: subscriber.routingkey
+server:
+  port: 9091
